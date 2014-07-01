@@ -118,7 +118,7 @@ module.exports = function(grunt) {
                                 return contents;
                             })(contents);
 
-                            return x.replace(/\/public\/js/g, '/public/release');
+                            return x.replace(/\/public\/js/ig, '/public/release');
                         }
                         return contents;
                     },
