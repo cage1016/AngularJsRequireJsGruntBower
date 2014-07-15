@@ -160,6 +160,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -181,6 +182,7 @@
     <Content Include="Public\js\config.js" />
     <Content Include="Public\js\controllers\controllers.js" />
     <Content Include="Public\js\controllers\home-controller.js" />
+    <Content Include="Public\js\controllers\product-controller.js" />
     <Content Include="Public\js\css\bootstrap\css\bootstrap.css" />
     <Content Include="Public\js\css\bootstrap\css\bootstrap.min.css" />
     <Content Include="Public\js\css\bootstrap\fonts\glyphicons-halflings-regular.svg" />
@@ -440,6 +442,8 @@
     <Content Include="Public\js\vendor\respond\src\respond.js" />
     <Content Include="Public\js\views\Home\index.js" />
     <Content Include="Public\js\views\Home\partials\home-index.html" />
+    <Content Include="Public\js\views\Product\index.js" />
+    <Content Include="Public\js\views\Product\partials\project-index.html" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Public\.bowerrc" />
@@ -630,6 +634,7 @@
     <Content Include="Views\Account\ResetPassword.cshtml" />
     <Content Include="Views\Account\ResetPasswordConfirmation.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Product\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
