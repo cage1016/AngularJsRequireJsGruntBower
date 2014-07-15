@@ -202,6 +202,7 @@
     <Content Include="Public\js\css\bootstrap\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Public\js\directives\directives.js" />
     <Content Include="Public\js\filters\filters.js" />
+    <Content Include="Public\js\services\book-service.js" />
     <Content Include="Public\js\services\services.js" />
     <Content Include="Public\js\vendor\angular-animate\angular-animate.js" />
     <Content Include="Public\js\vendor\angular-animate\angular-animate.min.js" />
@@ -457,7 +458,7 @@
     <Content Include="Public\js\views\Home\index.js" />
     <Content Include="Public\js\views\Home\partials\home-index.html" />
     <Content Include="Public\js\views\Product\index.js" />
-    <Content Include="Public\js\views\Product\partials\project-index.html" />
+    <Content Include="Public\js\views\Product\partials\product-index.html" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Public\.bowerrc" />

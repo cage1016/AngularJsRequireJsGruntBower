@@ -5,6 +5,7 @@ require([
         'app',
         'domReady',
         'controllers/product-controller',
+        'services/book-service',
         'bootstrap'
 ],
     function (angular, app, domReady) {
@@ -20,7 +21,9 @@ require([
                 when('/', {
                     templateUrl: '/public/js/views/Product/partials/product-index.html',
                     controller: 'ProjectIndexCtrl',
-                    resolve: {}
+                    resolve: {
+                        books: ['BookLoader', function (BookLoader) { return BookLoader(); }]
+                    }
                 }).
                 otherwise({
                     redirectTo: '/'
