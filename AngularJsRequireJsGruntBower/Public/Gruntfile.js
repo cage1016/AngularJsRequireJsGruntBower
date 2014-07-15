@@ -104,7 +104,9 @@ module.exports = function(grunt) {
                     },
                     modules: [{
                         name: 'views/Home/index'
-                    }],
+                    },{
+						name: 'views/Product/index'
+					}],
                     onBuildRead: function(moduleName, path, contents) {
                         if (moduleName === 'config') {
                             var x = (function(contents) {
