@@ -5,13 +5,14 @@ require([
         'app',
         'domReady',
         'controllers/home-controller',
+        'services/book-service',
         'bootstrap'
-    ],
-    function(angular, app, domReady) {
+],
+    function (angular, app, domReady) {
         var root = require.toUrl('.').split('.')[0];
         app.config([
             '$routeProvider', '$httpProvider', '$sceDelegateProvider', '$locationProvider',
-            function($routeProvider, $httpProvider, $sceDelegateProvider, $locationProvider) {
+            function ($routeProvider, $httpProvider, $sceDelegateProvider, $locationProvider) {
                 // sec
                 $sceDelegateProvider.resourceUrlWhitelist(['self', '.*']);
 
@@ -28,12 +29,12 @@ require([
             }
         ]).run([
             '$rootScope',
-            function($rootScope) {
+            function ($rootScope) {
                 // global variable
 
-                $rootScope.$safeApply = function($scope, fn) {
+                $rootScope.$safeApply = function ($scope, fn) {
                     $scope = $scope || $rootScope;
-                    fn = fn || function() {};
+                    fn = fn || function () { };
                     if ($scope.$$phase) {
                         fn();
                     } else {
@@ -43,7 +44,7 @@ require([
             }
         ]).constant('$', $);
 
-        domReady(function() {
+        domReady(function () {
             angular.bootstrap(document.body, ['myAngularApp']);
 
             $('html').addClass('ng-app: myAngularApp');
